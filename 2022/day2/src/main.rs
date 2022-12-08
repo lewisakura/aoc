@@ -60,7 +60,7 @@ fn main() {
             (Move::Rock, 'Z') => score += 6 + Move::Paper.value(),
             (Move::Paper, 'Z') => score += 6 + Move::Scissors.value(),
 
-            _ => unreachable!()
+            _ => unreachable!(),
         }
 
         total_score += score as u32;
