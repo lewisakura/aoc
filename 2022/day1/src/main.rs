@@ -1,9 +1,7 @@
 fn main() {
-    let input = std::fs::read_to_string("input.txt")
-        .expect("Input missing")
-        .replace('\r', "");
+    let input = std::fs::read_to_string("input.txt").expect("Input missing");
 
-    let split_input = input.split('\n');
+    let split_input = input.lines();
 
     let mut elves: Vec<u32> = vec![];
 

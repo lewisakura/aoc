@@ -3,11 +3,9 @@
 // column 2 is X,Y,Z for R,P,S
 
 fn main() {
-    let input = std::fs::read_to_string("input.txt")
-        .expect("Input missing")
-        .replace('\r', "");
+    let input = std::fs::read_to_string("input.txt").expect("Input missing");
 
-    let input_split = input.split('\n');
+    let input_split = input.lines();
 
     let mut total_score: u32 = 0;
 
